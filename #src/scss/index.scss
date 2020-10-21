@@ -1,0 +1,96 @@
+@import 'variables';
+@import 'reset';
+@import 'fonts';
+
+.card{
+    border: 1px solid $border-color;
+    min-width: calc(25% - 1vw);
+    padding: 1.4vw;
+    &:hover{
+        transition-delay: 0.05s;
+        box-shadow: 0px 6px 10px 0px rgba(179,179,179,0.66);
+    }
+}
+.card__img{
+    text-align: center;
+    img{
+        width: 60%;
+    }
+}
+.card__title{
+    font-weight: 600;
+    font-size: 1vw;
+    margin-top: 0.4vw;
+}
+.card__ingredient{
+    margin-top: 0.3vw;
+    font-size: 0.8vw;
+    color: $silver-text;
+    height: 5vw;
+}
+.card__selector{
+    margin-top: 0.3vw;
+    text-align: center;
+    background-color: #f3f3f3;
+    display: flex;
+    padding: 0.3vw;
+    border-radius: 10px;
+    li{
+        padding: 0.3vw;
+        flex: 1;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 0.9vw;
+        &.active {
+            background: #ffffff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+            border-radius: 5px;
+            cursor: pointer;
+          }
+    }
+}
+.card__bottom-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.8vw;
+}
+.card__price{
+    font-weight: 800;
+    font-size: 1.3vw;
+}
+.card__buy{
+    background-color: #fff;
+    border: 2px solid $main-color;
+    color: $main-color;
+    width: 8vw;
+    height: 2.5vw;
+    font-size: 0.8vw;
+    cursor: pointer;
+    &:hover{
+        background-color: $main-color;
+        color: #fff;
+    }
+}
+.card__qty-wrapper{
+    width: 8vw;
+    display: flex;
+}
+.card__qty{
+    flex: 1;
+    text-align: center;
+    padding-top: 0.4vw;
+    font-size: 1.2vw;
+}
+.card__change-btn{
+    background-color: $main-color;
+    flex: 1;
+    height: 2.5vw;
+    float: left;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 0.2vw;
+    font-size: 1.4vw;
+    color: #fff;
+    cursor: pointer;
+}
